@@ -1,0 +1,40 @@
+<h3 class="details">
+    {{countryDetail[0]?.name}} <span class="float-right"><i class="fa " aria-hidden="true" (click)="clickEvent()"
+            [ngClass]="isfav ? 'fa-heart' : 'fa-heart-o'"></i></span>
+</h3>
+<hr class="clear" />
+<h4>
+    Country Information
+</h4>
+<div class="container">
+    <div class="row">
+        <div class="col-5 blackDiv">
+            <p>Capital</p>
+            <h4>{{countryDetail[0]?.capital}}</h4>
+        </div>
+        <div class="col-5 blackDiv">
+            <p>Subregion</p>
+            <h4>{{countryDetail[0]?.subregion}}</h4>
+        </div>
+        <div class="col-2 blackDiv">
+            <p>Population</p>
+            <h4>{{countryDetail[0]?.population}}</h4>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-5 blackDiv">
+            <p>Region</p>
+            <h4>{{countryDetail[0]?.region}}</h4>
+        </div>
+        <div class="col-5 blackDiv">
+            <p>Area</p>
+            <h4>{{countryDetail[0]?.area}}</h4>
+        </div>
+    </div>
+</div>
+
+<hr>
+<h4>Currencies</h4>
+<p><label for="">Name :</label> {{countryDetail[0]?.currencies[0].name}} </p>
+<p><label for="">Symbol :</label> {{countryDetail[0]?.currencies[0].symbol}} </p>
+<p><label for="">Convert to INR :</label> {{countryDetail[0]?.currencies[0].code}}</p>

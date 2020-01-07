@@ -1,0 +1,13 @@
+.details {
+  margin-top: 25px;
+}
+
+.blackDiv {
+  height: 300px;
+  width: 400px;
+  display: inline-block;
+  margin-right: 15px;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 20px;
+}

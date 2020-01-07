@@ -1,0 +1,16 @@
+.blackDiv{
+    background-color: black;
+    color:#fff;
+    height:200px;
+    border-right: 10px solid #fff;
+    border-bottom: 10px solid #fff;
+    padding: 20px;
+}
+
+.details{
+    margin-top: 25px;
+}
+
+.details i{
+    color: pink;
+}

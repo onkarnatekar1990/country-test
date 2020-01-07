@@ -1,0 +1,40 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i&display=swap');
+
+html,
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* change the link color and padding  */
+.navbar-custom .navbar-nav .nav-link {
+  color: #fff;
+}
+
+/* change the color and background color of active links */
+.navbar-custom .nav-item.active .nav-link,
+.navbar-custom .nav-item:hover .nav-link {
+  color: #ffffff;
+}
+
+.ui-input-text {
+  border: none !important;
+  border-color: transparent !important;
+}
+
+input.form-control:focus {
+  box-shadow: inset 0 -1px 0 #ddd;
+}
+
+.customMedia img {
+  width: 40px;
+  height: 30px;
+}
+
+.customMedia .arrow>span {
+  vertical-align: sub;
+}
+
+.customMedia .fa-arrow-circle-o-right {
+  font-size: 20px;
+}

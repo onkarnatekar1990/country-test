@@ -1,0 +1,25 @@
+<div class="jumbotron">
+  <p class="lead">Search for Country </p>
+  <div class="form-group row">
+    <div class="col-sm-12">
+      <input type="text" class="form-control form-control-lg ui-input-text" placeholder="Start typing here"
+        id="listSearch" [(ngModel)]="search">
+    </div>
+  </div>
+</div>
+<div class="text-right">
+  Showing results 10/ {{countrylistObj?.length}}
+</div>
+<div class="media customMedia" *ngFor="let item of countrylistObj | searchCountry:'name' : search">
+  <img src="{{item.flag}}" class="align-self-center mr-3" alt="...">
+  <div class="media-body">
+    <div class="float-left">
+      <h5 class="mt-0">{{item.name}}</h5>
+      <p>{{item.nativeName}}</p>
+    </div>
+    <div class="float-right arrow">
+      <span><i class="fa fa-arrow-circle-o-right" aria-hidden="true"
+          routerLink="/country-detail/{{item.numericCode}}"></i></span>
+    </div>
+  </div>
+</div>

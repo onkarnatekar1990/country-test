@@ -1,0 +1,11 @@
+<h3 class="details">
+  Favorites <span class="float-right"><i class="fa fa-bars" aria-hidden="true"></i></span>
+</h3>
+<hr class="clearfix" />
+
+<ng-container *ngFor="let favC of favCountries">
+  <div class="blackDiv" [style.backgroundImage]="'url('+ favC.flag +')'">
+    <h5>{{ favC.name}}</h5>
+    <p>{{ favC.nativeName}}</p>
+  </div>
+</ng-container>
